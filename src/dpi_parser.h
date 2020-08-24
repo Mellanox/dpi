@@ -34,6 +34,6 @@ int dpi_parser_protocol_get(const struct dpi_parser_ctx *ctx);
  * NULL means not found
  */
 const char* dpi_parser_field_get(const struct dpi_parser_ctx *ctx,
-				 const char** field);
+				 const char* field);
 
 #endif
