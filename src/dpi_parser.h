@@ -34,7 +34,7 @@ int dpi_parser_protocol_get(const struct dpi_parser_ctx *ctx);
  * Returns string to the value of the given field.
  * NULL means not found
  */
-const char* dpi_parser_field_get(const struct dpi_parser_ctx *ctx,
-				 int field_id, size_t* str_len);
+struct mbuf* dpi_parser_field_get(const struct dpi_parser_ctx *ctx,
+				  int field_id);
 
 #endif
