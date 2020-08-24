@@ -21,8 +21,9 @@ void dpi_parser_ctx_dealloc(struct dpi_parser_ctx *ctx);
  * Parser should store the mbuf pointer for field retrival in the future.
  * returns 0 on sucess.
  * Error code otherwise: TBD
+ * Offset represents the L4 payload
  */
-int dpi_parser_parse(struct rte_mbuf *mbuf, struct dpi_parser_ctx *ctx);
+int dpi_parser_parse(struct rte_mbuf *mbuf, uint32_t payload_offset, struct dpi_parser_ctx *ctx);
 
 /* 
  * Returns the protocol ID
